@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "36700177055",
+    "project_id": "coding-challenge-ef64a",
+    "storage_bucket": "coding-challenge-ef64a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36700177055:android:71a834544aac9ee34418aa",
+        "android_client_info": {
+          "package_name": "com.example.coding_challenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36700177055-l1fg25tp4jlnl3u5pebb6g5uj7ns0nk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcWH_kCg14NFN6hbMldRixUgupCLsXgwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36700177055-l1fg25tp4jlnl3u5pebb6g5uj7ns0nk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

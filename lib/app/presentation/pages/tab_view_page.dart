@@ -1,6 +1,7 @@
 import 'package:coding_challenge/app/presentation/cubit/tab_view_cubit.dart';
 import 'package:coding_challenge/core/injection/injection.dart';
 import 'package:coding_challenge/features/location/presentation/pages/location_page.dart';
+import 'package:coding_challenge/features/news_feed/presentation/pages/news_feed_page.dart';
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/material.dart';
 import 'package:coding_challenge/core/enum/menu.dart';
@@ -65,9 +66,7 @@ class TabView extends StatelessWidget {
   static Widget _page(int index) {
     switch (index) {
       case 1:
-        return Container(
-          color: Colors.red,
-        );
+        return const NewsFeedPage();
       case 2:
         return Container(
           color: Colors.blue,

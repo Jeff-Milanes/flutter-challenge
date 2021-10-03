@@ -47,7 +47,12 @@
     <string>Always and when in use.</string>
     <key>NSLocationUsageDescription</key>
     <string>Older devices need location.</string>
-    <key>NSLocationAlwaysUsageDescription</key>
+<key>NSLocationAlwaysUsageDescription</key>
     <string>Can I always have the location?</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+  		<string>https</string>
+  		<string>http</string>
+	</array>
 </dict>
 </plist>

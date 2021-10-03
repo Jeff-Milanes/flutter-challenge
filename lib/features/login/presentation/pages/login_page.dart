@@ -27,14 +27,6 @@ class LoginPage extends StatelessWidget {
                   const SnackBar(content: Text('Login Failed')),
                 );
             }
-
-            if (state.status == LoginStatus.submissionSuccess) {
-              ScaffoldMessenger.of(context)
-                ..hideCurrentSnackBar()
-                ..showSnackBar(
-                  const SnackBar(content: Text('Login Success')),
-                );
-            }
           },
           child: Align(
             alignment: const Alignment(0, -1 / 5),

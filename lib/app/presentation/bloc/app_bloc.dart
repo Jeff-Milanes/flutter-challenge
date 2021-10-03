@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:coding_challenge/app/data/models/user.dart';
 import 'package:coding_challenge/app/domain/repositories/app_repository.dart';
+import 'package:coding_challenge/core/enum/app_status.dart';
 import 'package:equatable/equatable.dart';
 import 'package:injectable/injectable.dart';
 

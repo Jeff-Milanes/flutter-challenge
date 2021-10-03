@@ -1,0 +1,1 @@
+enum MarkType { currentLocation, destination }

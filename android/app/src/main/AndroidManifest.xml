@@ -17,7 +17,7 @@
           <data android:mimeType="*/*" />
         </intent>
     </queries>
-
+    
    <application
         android:label="coding_challenge"
         android:icon="@mipmap/ic_launcher">

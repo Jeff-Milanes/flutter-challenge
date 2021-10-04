@@ -15,10 +15,11 @@ abstract class RegisterModule {
   InternetConnectionChecker get connectionChecker =>
       InternetConnectionChecker();
 
+  // TODO: Cannot find any public graphQL for newsfeed.
   @lazySingleton
   GraphQLClient get gqlClient => GraphQLClient(
         cache: GraphQLCache(),
-        link: HttpLink('https://rickandmortyapi.com/graphql'),
+        link: HttpLink('url'),
       );
 
   @preResolve

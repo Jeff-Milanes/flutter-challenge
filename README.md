@@ -19,7 +19,7 @@ No need to add logout logic.
 Use BloC (flutter BloC or Hive) for state management on the map widget (feature a).
 
 
-## Code Gen 
+### Code Gen 
 `
 flutter pub run build_runner build --delete-conflicting-outputs
 `

@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:coding_challenge/core/error/exceptions.dart';
 import 'package:coding_challenge/features/login/domain/repositories/login_repository.dart';
 import 'package:injectable/injectable.dart';
 
@@ -26,7 +27,7 @@ class LoginCubit extends Cubit<LoginState> {
         password: state.password,
       );
       emit(state.copyWith(status: LoginStatus.submissionSuccess));
-    } catch (_) {
+    } on ServerException {
       emit(state.copyWith(status: LoginStatus.submissionFailure));
     }
   }
@@ -36,7 +37,7 @@ class LoginCubit extends Cubit<LoginState> {
     try {
       await _loginRepository.logInWithGoogle();
       emit(state.copyWith(status: LoginStatus.submissionSuccess));
-    } catch (_) {
+    } on ServerException {
       emit(state.copyWith(status: LoginStatus.submissionFailure));
     }
   }
@@ -46,7 +47,7 @@ class LoginCubit extends Cubit<LoginState> {
     try {
       await _loginRepository.logInWithFacebook();
       emit(state.copyWith(status: LoginStatus.submissionSuccess));
-    } catch (_) {
+    } on ServerException {
       emit(state.copyWith(status: LoginStatus.submissionFailure));
     }
   }

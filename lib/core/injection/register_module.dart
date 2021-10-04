@@ -22,6 +22,7 @@ abstract class RegisterModule {
         link: HttpLink('url'),
       );
 
+  // TODO: Optional based on requirements
   @preResolve
   @lazySingleton
   Future<Box> get openBox async {

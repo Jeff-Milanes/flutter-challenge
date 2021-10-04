@@ -1,6 +1,5 @@
 import 'package:coding_challenge/app/presentation/bloc/app_bloc.dart';
 import 'package:coding_challenge/app/presentation/routes/routes.dart';
-import 'package:coding_challenge/core/enum/app_status.dart';
 import 'package:coding_challenge/core/theme/theme.dart';
 import 'package:flow_builder/flow_builder.dart';
 import 'package:flutter/material.dart';

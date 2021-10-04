@@ -28,7 +28,7 @@ class Location extends StatefulWidget {
 
 class _LocationState extends State<Location> {
   static const _initialCameraPosition =
-      CameraPosition(target: LatLng(14.7741, 121.0495), zoom: 15);
+      CameraPosition(target: LatLng(14.5831, 120.9794), zoom: 15);
 
   GoogleMapController? _googleMapController;
 

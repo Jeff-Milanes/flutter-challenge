@@ -24,6 +24,8 @@ Use BloC (flutter BloC or Hive) for state management on the map widget (feature 
 
 please add the `key.properties` inside android folder and place the keystore in the file to use the firebase auth.
 
+for more info regarding installation you can send me an email at hello@jeffmilanes.com
+
 ### Code Gen 
 `
 flutter pub run build_runner build --delete-conflicting-outputs

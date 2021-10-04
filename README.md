@@ -26,7 +26,19 @@ please add the `key.properties` inside android folder and place the keystore in 
 
 for more info regarding installation you can send me an email at hello@jeffmilanes.com
 
+### App Screenshot
+
+![Login Screenshot](https://github.com/Jeff-Milanes/flutter-challenge/blob/main/assets/screenshots/Screenshot_Login.png?raw=true)
+
+![Map Location Screenshot](https://github.com/Jeff-Milanes/flutter-challenge/blob/main/assets/screenshots/Screenshot_MapLocation.png?raw=true)
+
+![News Feed Screenshot](https://github.com/Jeff-Milanes/flutter-challenge/blob/main/assets/screenshots/Screenshot_NewsFeed.png?raw=true)
+
+![Calculator Screenshot](https://github.com/Jeff-Milanes/flutter-challenge/blob/main/assets/screenshots/Screenshot_Calculator.png?raw=true)
+
+
 ### Code Gen 
 `
 flutter pub run build_runner build --delete-conflicting-outputs
 `
+

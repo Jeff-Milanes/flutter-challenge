@@ -30,7 +30,7 @@
 .pub-cache/
 .pub/
 /build/
-*.env
+#*.env expose .env for demo use only
 
 # Web related
 lib/generated_plugin_registrant.dart

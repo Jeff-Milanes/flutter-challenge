@@ -8,7 +8,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
 
 class LocationPage extends StatelessWidget {
-  const LocationPage({Key? key}) : super(key: key);
+  const LocationPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class LocationPage extends StatelessWidget {
 }
 
 class Location extends StatefulWidget {
-  const Location({Key? key}) : super(key: key);
+  const Location({super.key});
 
   @override
   _LocationState createState() => _LocationState();
@@ -112,8 +112,7 @@ class _LocationState extends State<Location> {
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30),
-                      ),
-                      primary: Colors.blue,
+                      ), backgroundColor: Colors.blue,
                     ),
                     icon: const Icon(Icons.directions, color: Colors.white),
                     onPressed: () {

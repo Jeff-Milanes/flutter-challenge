@@ -1,6 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:function_tree/function_tree.dart';
 import 'package:injectable/injectable.dart';
+import 'package:coding_challenge/core/extensions/cubit_extension.dart';
 
 part 'calculator_state.dart';
 
@@ -21,29 +22,29 @@ class CalculatorCubit extends Cubit<CalculatorState> {
       if (value.contains('(')) {
         final joinVal = lastValue + val;
         if (joinVal.contains(RegExp(r'\d\('))) {
-          val = state.input + '*(';
+          val = '${state.input}*(';
         }
       }
 
       if (lastValue.contains(')')) {
         final joinVal = lastValue + val;
         if (joinVal.contains(RegExp(r'\(\d'))) {
-          val = state.input + '*' + value;
+          val = '${state.input}*$value';
         }
       }
     }
 
-    emit(state.copyWith(input: val, clear: false));
+    safeEmit(state.copyWith(input: val, clear: false));
   }
 
   void clearValue() {
-    emit(state.copyWith(input: '', clear: true));
+    safeEmit(state.copyWith(input: '', clear: true));
   }
 
   void trimValue() {
     if (state.input.isNotEmpty) {
       final output = state.input.substring(0, state.input.length - 1);
-      emit(state.copyWith(input: output, clear: output.isEmpty ? true : false));
+      safeEmit(state.copyWith(input: output, clear: output.isEmpty ? true : false));
     }
   }
 
@@ -52,10 +53,10 @@ class CalculatorCubit extends Cubit<CalculatorState> {
       final output = state.input;
       if (output.isNotEmpty) {
         final result = output.interpret();
-        emit(state.copyWith(input: result.toString(), clear: true));
+        safeEmit(state.copyWith(input: result.toString(), clear: true));
       }
     } catch (_) {
-      emit(state.copyWith(input: 'Undefined', clear: true));
+      safeEmit(state.copyWith(input: 'Undefined', clear: true));
     }
   }
 }

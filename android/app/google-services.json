@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "36700177055",
     "project_id": "coding-challenge-ef64a",
-    "storage_bucket": "coding-challenge-ef64a.appspot.com"
+    "storage_bucket": "coding-challenge-ef64a.firebasestorage.app"
   },
   "client": [
     {
@@ -13,6 +13,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "36700177055-cu4pmkfnr9h7l6u4lvfnimnj88fau4kc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.coding_challenge",
+            "certificate_hash": "4b8d3c2208cd20cbfb6f77ee70923bc74743fb7a"
+          }
+        },
         {
           "client_id": "36700177055-l1fg25tp4jlnl3u5pebb6g5uj7ns0nk0.apps.googleusercontent.com",
           "client_type": 3
@@ -29,6 +37,13 @@
             {
               "client_id": "36700177055-l1fg25tp4jlnl3u5pebb6g5uj7ns0nk0.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "36700177055-qpqjhprm39m0kh2agfmjcgoap685g7t4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.codingChallenge"
+              }
             }
           ]
         }

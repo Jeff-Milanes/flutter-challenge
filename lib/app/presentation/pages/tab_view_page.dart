@@ -9,7 +9,7 @@ import 'package:coding_challenge/core/enum/menu.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class TabViewPage extends StatelessWidget {
-  const TabViewPage({Key? key}) : super(key: key);
+  const TabViewPage({super.key});
 
   static Page page() => const MaterialPage<void>(child: TabViewPage());
 
@@ -23,7 +23,7 @@ class TabViewPage extends StatelessWidget {
 }
 
 class TabView extends StatelessWidget {
-  const TabView({Key? key}) : super(key: key);
+  const TabView({super.key});
 
   @override
   Widget build(BuildContext context) {

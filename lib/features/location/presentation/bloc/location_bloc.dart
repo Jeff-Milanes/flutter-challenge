@@ -31,15 +31,15 @@ class LocationBloc extends Bloc<LocationEvent, LocationState> {
 
   Future<void> _permission(
       Permission event, Emitter<LocationState> emit) async {
-    late PermissionStatus _permissionStatus;
+    late PermissionStatus permissionStatus;
 
-    _permissionStatus = await _location.hasPermission();
-    if (_permissionStatus == PermissionStatus.denied ||
-        _permissionStatus == PermissionStatus.deniedForever) {
-      _permissionStatus = await _location.requestPermission();
+    permissionStatus = await _location.hasPermission();
+    if (permissionStatus == PermissionStatus.denied ||
+        permissionStatus == PermissionStatus.deniedForever) {
+      permissionStatus = await _location.requestPermission();
     }
 
-    emit(state.copyWith(status: _permissionStatus));
+    emit(state.copyWith(status: permissionStatus));
   }
 
   Future<void> _onLocationChanged(

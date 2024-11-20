@@ -53,7 +53,7 @@ class ImpLoginRepository implements LoginRepository {
       final facebookUser = await _facebookAuth.login();
 
       credential =
-          FacebookAuthProvider.credential(facebookUser.accessToken!.token);
+          FacebookAuthProvider.credential(facebookUser.accessToken!.tokenString);
       await _firebaseAuth.signInWithCredential(credential);
     } catch (_) {
       throw ServerException();

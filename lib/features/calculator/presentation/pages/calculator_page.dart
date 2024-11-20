@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CalculatorPage extends StatelessWidget {
-  const CalculatorPage({Key? key}) : super(key: key);
+  const CalculatorPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class CalculatorPage extends StatelessWidget {
 }
 
 class Calculator extends StatefulWidget {
-  const Calculator({Key? key}) : super(key: key);
+  const Calculator({super.key});
 
   @override
   State<Calculator> createState() => _CalculatorState();

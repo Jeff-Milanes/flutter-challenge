@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   static Page page() => const MaterialPage<void>(child: LoginPage());
 
@@ -44,21 +44,22 @@ class LoginPage extends StatelessWidget {
                     onPressed: () =>
                         context.read<LoginCubit>().logInWithCredentials(),
                   ),
-                  const SizedBox(height: 30),
-                  LoginButton(
-                    label: 'SIGN IN WITH GOOGLE',
-                    icon: FontAwesomeIcons.google,
-                    buttonColor: Colors.red,
-                    onPressed: () =>
-                        context.read<LoginCubit>().logInWithGoogle(),
-                  ),
-                  const SizedBox(height: 4),
-                  LoginButton(
-                    label: 'SIGN IN WITH FACEBOOK',
-                    icon: FontAwesomeIcons.facebook,
-                    onPressed: () =>
-                        context.read<LoginCubit>().logInWithFacebook(),
-                  )
+                  // TODO: Need to setup
+                  // const SizedBox(height: 30),
+                  // LoginButton(
+                  //   label: 'SIGN IN WITH GOOGLE',
+                  //   icon: FontAwesomeIcons.google,
+                  //   buttonColor: Colors.red,
+                  //   onPressed: () =>
+                  //       context.read<LoginCubit>().logInWithGoogle(),
+                  // ),
+                  // const SizedBox(height: 4),
+                  // LoginButton(
+                  //   label: 'SIGN IN WITH FACEBOOK',
+                  //   icon: FontAwesomeIcons.facebook,
+                  //   onPressed: () =>
+                  //       context.read<LoginCubit>().logInWithFacebook(),
+                  // )
                 ],
               ),
             ),

@@ -3,7 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 
 class NewsDetailsPage extends StatelessWidget {
-  const NewsDetailsPage({Key? key, required this.model}) : super(key: key);
+  const NewsDetailsPage({super.key, required this.model});
 
   final NewsModel model;
   @override
@@ -45,8 +45,7 @@ class NewsDetailsPage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
-                  ),
-                  primary: Colors.green,
+                  ), backgroundColor: Colors.green,
                 ),
                 onPressed: () async {
                   if (await canLaunch(model.url!)) {

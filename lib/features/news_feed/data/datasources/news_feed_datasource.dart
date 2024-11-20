@@ -15,10 +15,10 @@ class ImpNewsFeedDataSource implements NewsFeedDataSource {
 
   @override
   Future<List<NewsModel>> getNews() async {
-    final _baseUrl = dotenv.env['NEWS_URL'];
-    final response = await _dio.get(_baseUrl!, queryParameters: {
+    final baseUrl = dotenv.env['NEWS_URL'];
+    final response = await _dio.get(baseUrl!, queryParameters: {
       'apiKey': dotenv.env['NEWS_FEED_API'],
-      'country': 'ph',
+      'country': 'us',
     });
 
     return (response.data['articles'] as List)

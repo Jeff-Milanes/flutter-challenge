@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 
 class CalculatorButton extends StatelessWidget {
   const CalculatorButton(
-      {Key? key,
+      {super.key,
       required this.label,
       required this.onTap,
       required this.size,
       this.backgroundColor = Colors.white,
-      this.labelColor = Colors.black})
-      : super(key: key);
+      this.labelColor = Colors.black});
 
   final String label;
   final VoidCallback? onTap;

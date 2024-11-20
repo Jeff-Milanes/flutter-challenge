@@ -24,8 +24,8 @@ class ImpLocationDataSource implements LocationDataSource {
       double? currentLng,
       double? destinationLat,
       double? destinationLng}) async {
-    final _baseUrl = dotenv.env['DIRECTIONS_PROVIDER_URL'];
-    final response = await _dio.get(_baseUrl!, queryParameters: {
+    final baseUrl = dotenv.env['DIRECTIONS_PROVIDER_URL'];
+    final response = await _dio.get(baseUrl!, queryParameters: {
       'key': dotenv.env['DIRECTIONS_API_KEY'],
       'from': '$currentLat,$currentLng',
       'to': '$destinationLat,$destinationLng'

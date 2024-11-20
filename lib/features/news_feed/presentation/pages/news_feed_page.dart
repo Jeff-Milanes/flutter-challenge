@@ -6,7 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class NewsFeedPage extends StatelessWidget {
-  const NewsFeedPage({Key? key}) : super(key: key);
+  const NewsFeedPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class NewsFeedPage extends StatelessWidget {
 }
 
 class NewsFeed extends StatefulWidget {
-  const NewsFeed({Key? key}) : super(key: key);
+  const NewsFeed({super.key});
 
   @override
   State<NewsFeed> createState() => _NewsFeedState();

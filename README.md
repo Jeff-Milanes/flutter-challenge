@@ -42,3 +42,7 @@ for more info regarding installation you can send me an email at hello@jeffmilan
 flutter pub run build_runner build --delete-conflicting-outputs
 `
 
+### Credentail
+
+username: test@test.com
+password: password

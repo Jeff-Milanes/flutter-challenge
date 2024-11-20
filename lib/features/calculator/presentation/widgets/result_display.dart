@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ResultDisplay extends StatelessWidget {
-  const ResultDisplay({Key? key, required this.text}) : super(key: key);
+  const ResultDisplay({super.key, required this.text});
 
   final String text;
 
